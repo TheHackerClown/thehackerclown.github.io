@@ -1,0 +1,83 @@
+:root {
+  --selection-bg: indigo;
+  --result: white;
+  --passive-txt: red;
+  --background : black;
+  --active-txt: blue;
+}
+
+#input {
+  color:var(--active-txt);
+  text-shadow:4px 4px 4px var(--active-txt);
+  background: var(--background);
+}
+
+
+#user_input {
+  color:var(--active-txt);
+  text-shadow:4px 4px 4px var(--active-txt);
+  background: var(--background);
+  width: 85vw;
+  border: 0px;
+  font-size: 20px;
+  outline:none;
+}
+
+
+body {
+  background-color: var(--background);
+  height: 100vh;
+  margin-top: 3%;
+  margin-left: 1%;
+  padding:0;
+  overflow-x: hidden;
+  color:var(--result);
+  font: 1.3rem Inconsolata, monospace;
+  text-shadow: 0 0 5px var(--result);
+}
+::selection {
+  background: var(--selection-bg);
+  text-shadow: none;
+}
+pre {
+  margin: 0;
+}
+
+div {
+  display: inline-block;
+}
+
+#address {
+  color:var(--passive-txt);
+  text-shadow:4px 4px 4px var(--passive-txt);
+}
+
+#intro {
+  color:var(--passive-txt);
+  text-shadow:4px 4px 4px var(--passive-txt);
+}
+
+
+a {
+  color: var(--passive-txt);
+  text-shadow: 4px 4px 4px var(--passive-txt);
+  display: inline-block;
+}
+
+body::-webkit-scrollbar-track
+{
+	border: 1px solid var(--background);
+	background-color: var(--background);
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: var(--result);
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: var(--passive-txt);	
+}
+

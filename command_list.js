@@ -1,0 +1,1 @@
+const commands = {'whoami':new Whoami(),'clear':new Clear(),'help':new Help()};//,'whoami':Whoami(),'clear':Clear()}
