@@ -40,3 +40,14 @@ class Help {
         return result;
     }
 }
+
+class Exit{
+    constructor() {
+        this.name = 'exit';
+        this.docs = "This command exits the terminal and redirects you to TheHackerClown's github page";
+    }
+    async result(input) {
+        window.location.replace('https://github.com/TheHackerClown')
+        return 'Thanks you for using me :})';
+    }
+}
