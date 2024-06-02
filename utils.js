@@ -51,3 +51,13 @@ class Exit{
         return 'Thanks you for using me :})';
     }
 }
+
+class ListFiles {
+    constructor() {
+        this.name = 'ls';
+        this.docs = 'This command lists all the existing files in the repository,[just like linux]\nbut it also describes the file functions';
+    }
+    async result(input) {
+        return 'The Existing files in this repository are:\n\n1. init.js \nThis File initializes the main logic of the terminal and other basic functions\nlike the intro typewriter effect, write function, ask function etc\n\n2. utils.js \nThis files contains the pre-made commands by the author TheHackerClown.\n\n3. commands_list.js \nIt is a middleman between the init.js and utils.js files, as\nIt initializes all the commands before making them usable.\n\n4. index.html\nIt creates the basic skeleton of the terminal.\n\n5. style.css\nIt initializes the terminal effect.';
+    }
+}

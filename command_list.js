@@ -1,1 +1,1 @@
-const commands = {'whoami':new Whoami(),'clear':new Clear(),'help':new Help(),'exit':new Exit()};
+const commands = {'whoami':new Whoami(),'clear':new Clear(),'help':new Help(),'exit':new Exit(),'ls':new ListFiles()};

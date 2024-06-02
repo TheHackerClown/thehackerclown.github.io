@@ -1,5 +1,5 @@
 //Intro Typewriter effect
-let intro = 'TheHackerClown Terminal\nShell Version 1.0\nNote: you can use "help" command to explore various commands.\n';
+let intro = `TheHackerClown Terminal\nShell Version 1.0\nStarted On: ${new Date()}\nNote: you can use "help" command to explore.\n`;
 const myInput = document.getElementById('input');
 window.addEventListener('DOMContentLoaded',()=>{
     let i = 1;
@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded',()=>{
             clearInterval(intro_intrvl)
             $('#data').css('display', 'block')
             myInput.focus()
+
         } else {
             $('#intro').text(intro.slice(0,i++))
         }

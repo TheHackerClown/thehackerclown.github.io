@@ -6,6 +6,10 @@
   --active-txt: blue;
 }
 
+#intro {
+  font-size: 22px;
+}
+
 #input {
   color:var(--active-txt);
   text-shadow:4px 4px 4px var(--active-txt);
