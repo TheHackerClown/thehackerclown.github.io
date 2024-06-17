@@ -8,7 +8,7 @@ class Whoami {
     result(input) {
         //can ask questions from the users
         //var answr = await ask('dsds :');
-        return `IPv4 : ${this.ip4.responseJSON.ip}\nPlatform Using : ${navigator.userAgentData.platform}\nBrowser : ${navigator.userAgentData.brands[2].brand} Version ${navigator.userAgentData.brands[0].version}`;
+        return `IPv4 : ${this.ip4.responseJSON.ip}\nPlatform Using : ${navigator.userAgentData.platform}\nBrowser : ${(navigator.userAgentData.platform === 'Android') ? navigator.userAgentData.brands[0].brand:navigator.userAgentData.brands[2].brand} Version ${navigator.userAgentData.brands[0].version}`;
     }
 }
 
