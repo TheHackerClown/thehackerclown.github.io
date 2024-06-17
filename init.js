@@ -1,5 +1,5 @@
 //Intro Typewriter effect
-let intro = `TheHackerClown Terminal\nShell Version 1.0\nStarted On: ${new Date()}\nNote: use "help" to explore.\n`;
+let intro = `Hackster 🏴‍☠️\nShell Version 1.0\nStarted On: ${new Date()}\nNote: use "help" to explore.\n`;
 const myInput = document.getElementById('input');
 window.addEventListener('DOMContentLoaded',()=>{
     let i = 1;
