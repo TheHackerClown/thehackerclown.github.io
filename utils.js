@@ -23,6 +23,12 @@ class Clear {
         $('#intro').text('');
         return 0;
     }
+    help(input) {
+        $('#output').text('');
+        console.clear();
+        $('#intro').text('');
+        return "It's pretty much clear, I think\n";
+    }
 }
 class Help {
     constructor() {
@@ -39,6 +45,9 @@ class Help {
         result += '\nAlso you can write expressions like in 2+2 or 2==2, or 194567*23323/2343+(65565-5566)\nYou can also access the local variables like "intro" for introduction lines etc.';
         return result;
     }
+    help(input) {
+        return "Please don't overthink!\n";
+    }
 }
 
 class Exit{
@@ -51,7 +60,7 @@ class Exit{
         return 'Thanks you for using me :})';
     }
     help(input) {
-        return '"exit"\n'
+        return 'Exits to the source code of Hackster.\n';
     }
 }
 
@@ -62,6 +71,9 @@ class ListFiles {
     }
     result(input) {
         return 'The Existing files in this repository are:\n\n1. init.js \nThis File initializes the main logic of the terminal and other basic functions\nlike the intro typewriter effect, write function, ask function etc\n\n2. utils.js \nThis files contains the pre-made commands by the author TheHackerClown.\n\n3. commands_list.js \nIt is a middleman between the init.js and utils.js files, as\nIt initializes all the commands before making them usable.\n\n4. index.html\nIt creates the basic skeleton of the terminal.\n\n5. style.css\nIt initializes the terminal effect.';
+    }
+    help(input) {
+        return "It returns all the files made by TheHackerClown\n";
     }
 }
 
